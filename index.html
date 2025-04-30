@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="images/logo.png">
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="container">
             <a href="index.html" class="logo-link">
                 <div class="logo">
@@ -16,7 +16,7 @@
                     East Bali Poverty Project
                 </div>
             </a>
-            <nav>
+            <nav class="nav" id="nav">
                 <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Volunteer</a></li>
@@ -61,5 +61,32 @@
       <p>© 2025 East Bali Poverty Project</p>
     </div>
   </footer>
+
+  <script>
+
+    let prevScrollPos = window.pageYOffset;
+    const header = document.getElementById("header");
+
+    window.addEventListener("scroll", () => {
+    const currentScrollPos = window.pageYOffset;
+    const scrollDiff = prevScrollPos - currentScrollPos;
+  
+    // Only show header if scrolling up significantly and past 100px
+    if (scrollDiff > 5 && currentScrollPos > 10) {
+      header.style.top = "0";
+    } 
+    // Hide if scrolling down
+    else if (scrollDiff < -5) {
+      header.style.top = "-100px";
+    }
+  
+    prevScrollPos = currentScrollPos;
+    });
+    const menuToggle = document.getElementById("menu-toggle");
+    const nav = document.querySelector("nav");
+    menuToggle.addEventListener("click", () => {
+      nav.classList.toggle("show");
+    });
+    </script>
 </body>
 </html>
