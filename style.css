@@ -213,11 +213,396 @@
     .hero h1 {
       font-size: 36px;
     }
-  
-    .hero p {
+    
+      .hero p {
       font-size: 18px;
     }
-
-
-
   }
+
+/* About Page Styles by diyow */
+.our-story {
+    padding: 60px 0;
+    background-color: #fffbeb;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.story-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.story-content h2 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Add styles for subheadings */
+.story-content h3 {
+    font-size: 1.5em;
+    color: #444;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.story-content p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.story-content blockquote {
+    border-left: 4px solid #f06d3d; 
+    padding-left: 20px;
+    margin: 20px 0 20px 20px; 
+    font-style: italic;
+    color: #555; 
+    font-size: 1.05em; 
+}
+
+.cta-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #f06d3d;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.cta-link:hover {
+    color: #e2663a;
+    text-decoration: underline;
+}
+
+
+.our-vision {
+    padding: 80px 0;
+    background-color: #98c179;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.vision-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.vision-text {
+    padding-right: 40px;
+}
+
+.vision-text .section-label {
+    color: #fff;
+}
+
+.vision-text h2 {
+    font-size: 3em;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.vision-description {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.vision-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.vision-gallery {
+    position: relative;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item.large {
+    grid-column: span 2;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    max-width: 250px;
+    max-height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.awards {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.awards .section-header h2 {
+    color: #333;
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.award-item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.award-item:hover {
+    transform: translateY(-5px);
+}
+
+.award-icon {
+    font-size: 2.5em;
+    background: #f8f9fa;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.award-content {
+    flex: 1;
+}
+
+.award-content h3 {
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 1.3em;
+}
+
+.award-year {
+    color: #f06d3d;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.award-content p {
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.award-content small {
+    color: #888;
+    display: block;
+    font-size: 0.9em;
+}
+
+.meet-people {
+    padding: 60px 0;
+    background-color: #fffbeb;
+}
+
+.meet-people h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.people-grid {
+    display: grid;
+    gap: 40px;
+}
+
+.person-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.person-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.person-info {
+    padding: 30px;
+}
+
+.person-info h3 { 
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.person-info h4 {
+    color: #666;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.person-info p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .vision-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .vision-text {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .awards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .vision-stats {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item.large {
+        grid-column: auto;
+    }
+
+    .awards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .award-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .vision-images {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Section Common Styles */
+.section-label {
+    color: #f06d3d;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-description {
+    color: #666;
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 20px auto 0;
+}
