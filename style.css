@@ -803,3 +803,95 @@ footer .work {
   text-align: center;
   padding: 20px 0;
 }
+
+
+/* Campaign page styles by Jr*/
+.current-campaigns {
+  background-color: #a9cbb7; /* Light green background */
+  padding: 40px 20px; /* Adjust padding */
+  margin-top: 20px;
+}
+
+.current-campaigns .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.current-campaigns h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.8em; /* Adjust font size */
+}
+
+.current-campaigns p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 0.95em;
+}
+
+.campaign-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Increased minmax width */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.campaign-item {
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex; /* Change back to flex for a simpler layout of image and text */
+  flex-direction: column; /* Stack image and details vertically */
+  align-items: stretch; /* Make details take full width */
+}
+
+.campaign-image {
+  background-color: #ddd;
+  height: 150px; /* Adjust height of the image placeholder */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+  font-size: 1.2em;
+}
+
+.campaign-details {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push button to the bottom */
+  flex-grow: 1; /* Allow details to take up available vertical space */
+}
+
+.campaign-details h3 {
+  margin-top: 0;
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.campaign-details p {
+  font-size: 0.85em;
+  color: #555;
+  margin-bottom: 10px; /* Reduced margin before the button */
+}
+
+.campaign-details a {
+  display: inline-block;
+  background-color: #f0ad4e; /* Orange button */
+  color: #fff;
+  padding: 8px 12px; /* Adjust button padding */
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.8em; /* Adjust font size */
+  text-align: center; /* Center the button text */
+  margin-top: 10px; /* Add some space above the button */
+}
+
+.campaign-details a:hover {
+  background-color: #eea236;
+}
