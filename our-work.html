@@ -1,0 +1,151 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Work - EBPP</title>
+  <link rel="stylesheet" href="style.css" />
+</head> -->
+<!DOCTYPE html>
+<html lang="en-ID">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="East Bali Poverty Project - Empowering Communities in Bali">
+    <meta name="keywords" content="East Bali, Poverty, Project, Community, Empowerment, Education, Healthcare">
+    <meta name="author" content="Your Name">
+    <meta charset="UTF-8">
+    <title>Our Work - EBPP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo" class="logo-img" width="80" height="80">
+                    East Bali Poverty Project
+                </div>
+            </a>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="our-work.html">Our Work</a></li>
+                    <li><a href="#" class="btn-donate">Donate Now</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        </div>
+    </header>
+
+  <section class="hero-work">
+    <!-- <h1>Our Work</h1> -->
+    <div class="hero-description">
+        <h1>We go to great lengths to track our performance and measure our impact.</h1>
+        <img src="https://static.wixstatic.com/media/6c3b8b_5c7f5d0d6f8045deb00ed4caeb37a004~mv2.png/v1/crop/x_0,y_378,w_3464,h_1652/fill/w_2090,h_996,al_c,q_95,usm_0.66_1.00_0.01,enc_avif,quality_auto/6c3b8b_5c7f5d0d6f8045deb00ed4caeb37a004~mv2.png" 
+        alt="Education" width="90%" height="43%" />
+    <p>Transforming lives through education, health, and sustainable development in rural Bali.</p>
+  </section>
+
+  <section class="annual-report">
+        <h2>Annual Report</h2>
+        <p>Our Annual Report explains in detail the achievements of each of our programs and how they answers to our overall vision.
+            Click the buttons below to access annual reports.</p>
+    
+
+    <div class="report-cards">
+        <div class="card">
+            <!-- <img src="img/health.jpg" alt="Health">
+            <h2>Health</h2>
+            <p>Delivering vital healthcare and nutrition programs to those in need.</p> -->
+            <div class="card-image"></div>
+            <div class="card-body">
+                <p>1998 - 2021 Progress report</p>
+                <button>Download</button>
+            </div>
+        </div>
+          
+        <div class="card">
+            <!-- <img src="img/livelihood.jpg" alt="Livelihood">
+            <h2>Livelihood</h2>
+            <p>Empowering communities with sustainable farming and income-generating skills.</p> -->
+            <div class="card-image"></div>
+            <div class="card-body">
+                <p>1998 - 2021 Progress report</p>
+                <button>Download</button>
+            </div>
+        </div>
+    </div>
+
+  </section>
+
+  <!-- <footer class="work">
+    <p>&copy; All rights reserved to East Bali Poverty Project</p>
+  </footer> -->
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h2>East Bali Poverty Project</h2>
+        <div class="social-icons">
+          <a href="#"><img src="x-icon.svg" alt="X"></a>
+          <a href="#"><img src="instagram-icon.svg" alt="Instagram"></a>
+          <a href="#"><img src="youtube-icon.svg" alt="YouTube"></a>
+          <a href="#"><img src="linkedin-icon.svg" alt="LinkedIn"></a>
+        </div>
+      </div>
+  
+      <div class="footer-column">
+        <h3>Get Involved</h3>
+        <a href="#">Donate</a>
+        <a href="#">Volunteer</a>
+        <a href="#">Fundraising</a>
+      </div>
+  
+      <div class="footer-column">
+        <h3>Resources</h3>
+        <a href="#">Annual Reports</a>
+        <a href="#">Child Protection Policy</a>
+      </div>
+  
+      <div class="footer-column">
+        <h3>Get Connected</h3>
+        <a href="#">Blog</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+  
+    <p class="footer-bottom">All rights reserved to East Bali Poverty Project</p>
+  </footer>
+
+  <script>
+
+    let prevScrollPos = window.pageYOffset;
+    const header = document.getElementById("header");
+
+    window.addEventListener("scroll", () => {
+    const currentScrollPos = window.pageYOffset;
+    const scrollDiff = prevScrollPos - currentScrollPos;
+
+    if (scrollDiff > 10 && currentScrollPos > 50) {
+        header.classList.add("visible");
+        header.classList.remove("hidden");
+    } else if (scrollDiff < -10) {
+        header.classList.remove("visible");
+        header.classList.add("hidden");
+    }
+
+    prevScrollPos = currentScrollPos;
+    });
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const nav = document.querySelector("nav");
+    menuToggle.addEventListener("click", () => {
+      nav.classList.toggle("show");
+    });
+    </script>
+</body>
+</html>
