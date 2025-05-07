@@ -16,57 +16,62 @@
                     East Bali Poverty Project
                 </div>
             </a>
-            <nav class="nav" id="nav">
+            <nav>
                 <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Volunteer</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#">Our Work</a></li>
-                <li><a href="#">Donate Now</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="#">Our Work</a></li>
+                    <li><a href="#" class="btn-donate">Donate Now</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="current-campaigns">
+    <section class="campaign-head">
         <div class="container">
             <h2>Our Current Campaigns</h2>
+            <div class="campaign-head-image">
+                <img src="images/campaign1.png" alt="Campaigns Head Image">
+            </div>
             <p>We partner with remote disadvantage mountain communities to fight poverty through education, health, economic development, disaster mitigation, elimination and sustainable dry land permaculture & agroforestry for food security and economic development.</p>
-            <div class="campaign-grid">
-                <div class="campaign-item">
-                    <div class="campaign-image"></div>
-                    <div class="campaign-details">
-                        <h3>Health Outreach: Mother Child Health and Nutrition</h3>
-                        <p>Improving the health and nutrition of mothers and children in remote East Bali.</p>
-                        <a href="#">Learn More</a>
-                    </div>
+        </div>
+    </section>
+    
+    <section class="current-campaigns">
+            <div class="campaign-item">
+                <div class="campaign-image">
+                    <img src="images/campaign2.png" alt="Health Outreach Image">
                 </div>
-                <div class="campaign-item">
-                    <div class="campaign-image"></div>
-                    <div class="campaign-details">
-                        <h3>Zone 3: Road & water infrastructure for food security & economic development</h3>
-                        <p>Developing essential infrastructure to support food security and economic growth.</p>
-                        <a href="#">Learn More</a>
-                    </div>
-                </div>
-                <div class="campaign-item">
-                    <div class="campaign-image"></div>
-                    <div class="campaign-details">
-                        <h3>Relevant education for remote mountain schools</h3>
-                        <p>Providing quality and relevant education to children in isolated communities.</p>
-                        <a href="#">Learn More</a>
-                    </div>
-                </div>
-                <div class="campaign-item">
-                    <div class="campaign-image"></div>
-                    <div class="campaign-details">
-                        <h3>Disaster Mitigation, Preparedness & Response</h3>
-                        <p>Building resilience and providing support during natural disasters.</p>
-                        <a href="#">Learn More</a>
-                    </div>
+                <div class="campaign-details">
+                    <h3>Health Outreach: Mother Child Health and Nutrition</h3>
+                    <p>Improving the health and nutrition of mothers and children in remote East Bali.</p>
+                    <a href="#">Learn More</a>
                 </div>
             </div>
-        </div>
+            
+            <div class="campaign-item">
+                <div class="campaign-image">
+                    <img src="images/campaign3.png" alt="Infrastructure Image">
+                </div>
+                <div class="campaign-details">
+                    <h3>Zone 3: Road & water infrastructure for food security & economic development</h3>
+                    <p>Developing essential infrastructure to support food security and economic growth.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="campaign-item">
+                <div class="campaign-image">
+                    <img src="images/campaign4.png" alt="Education Image">
+                </div>
+                <div class="campaign-details">
+                    <h3>Relevant education for remote mountain schools</h3>
+                    <p>Providing quality and relevant education to children in isolated communities.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+            
     </section>
 
     <section class="support">
@@ -77,45 +82,32 @@
         </div>
       </section>
 
-    <footer>
-        <div class="container">
-            <div>
-                <h4>East Bali Poverty Project</h4>
-                <div class="social-links">
-                    <a href="#"><img src="https://via.placeholder.com/30x30.png?text=FB" alt="Facebook"></a>
-                    <a href="#"><img src="https://via.placeholder.com/30x30.png?text=TW" alt="Twitter"></a>
-                    <a href="#"><img src="https://via.placeholder.com/30x30.png?text=IN" alt="Instagram"></a>
-                    <a href="#"><img src="https://via.placeholder.com/30x30.png?text=YT" alt="YouTube"></a>
-                </div>
-            </div>
-            <div>
-                <h4>Get Involved</h4>
-                <ul>
-                    <li><a href="#">Volunteer</a></li>
-                    <li><a href="#">Sponsor a Child</a></li>
-                    <li><a href="#">Partnerships</a></li>
-                    <li><a href="#">Fundraising</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Resources</h4>
-                <ul>
-                    <li><a href="#">Annual Reports</a></li>
-                    <li><a href="#">Newsletters</a></li>
-                    <li><a href="#">Photo Gallery</a></li>
-                    <li><a href="#">Videos</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Get Connected</h4>
-                <ul>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div class="copyright">&copy; 2023 East Bali Poverty Project. All rights reserved.</div>
-        </div>
-    </footer>
+      <script>
+
+        let prevScrollPos = window.pageYOffset;
+        const header = document.getElementById("header");
+    
+        window.addEventListener("scroll", () => {
+        const currentScrollPos = window.pageYOffset;
+        const scrollDiff = prevScrollPos - currentScrollPos;
+    
+        if (scrollDiff > 10 && currentScrollPos > 50) {
+            header.classList.add("visible");
+            header.classList.remove("hidden");
+        } else if (scrollDiff < -10) {
+            header.classList.remove("visible");
+            header.classList.add("hidden");
+        }
+    
+        prevScrollPos = currentScrollPos;
+        });
+    
+        const menuToggle = document.getElementById("menu-toggle");
+        const nav = document.querySelector("nav");
+        menuToggle.addEventListener("click", () => {
+          nav.classList.toggle("show");
+        });
+        </script>
+
 </body>
 </html>
