@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ID">
 <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="East Bali Poverty Project - Empowering Communities in Bali">
+  <meta name="keywords" content="East Bali, Poverty, Project, Community, Empowerment, Education, Healthcare">
+  <meta name="author" content="Your Name">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>East Bali Poverty Project</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="images/logo.png">
@@ -18,58 +22,86 @@
             </a>
             <nav class="nav" id="nav">
                 <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Volunteer</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#">Our Work</a></li>
-                <li><a href="#">Donate Now</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="our-work.html">Our Work</a></li>
+                    <li><a href="#" class="btn-donate">Donate Now</a></li>
                 </ul>
             </nav>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
         </div>
     </header>
 
-  <section class="hero">
-    <div class="container">
-      <h1>25 Years of Work</h1>
-      <p>Bringing education, healthcare, and sustainable livelihoods to Bali’s rural communities.</p>
-      <a href="#" class="btn-primary">Support Us</a>
-    </div>
-  </section>
-
-  <section class="news">
-      <h2>News & Events</h2>
-      <div class="container-news">
-        <div class="news-grid">
-          <div class="news-item">Event 1</div>
-          <div class="news-item">Event 2</div>
-          <div class="news-item">Event 3</div>
-          <div class="news-item">Event 4</div>
-          <div class="news-item">Event 5</div>
-          <div class="news-item">Event 6</div>
+      <section class="hero">
+        <div class="hero-description">
+            <h1>25 Years of Work and Still Going Strong</h1>
+            <p>
+                Since 1998, the East Bali Poverty Project has been empowering 
+                communities in the Ban district through education, collaboration, and 
+                sustainable initiatives. With a focus on ownership and self-reliance, their 
+                mission is to eradicate poverty and develop community leaders in Bali’s 
+                poorest region. Learn more about their impactful work on the ground.
+            </p>
+            <a href="#" class="btn-support">Support Us</a>
+            <a href="#" class="btn-involved">Get Involved</a>
         </div>
-      </div>
-    </section>
-
-  <section class="support">
+        <div class="hero-image">
+            <img src="images/logo.png" alt="Hero Image" class="hero-img" width="100px" height="100px">
+            <img src="images/logo.png" alt="Hero Image" class="hero-img" width="100px" height="100px">
+            
+        </div>
+      </section>
+    
+      <section class="news">
+        <h2>News & Events</h2>
+        <div class="container-news">
+          <div class="news-grid">
+            <div class="news-item">Event 1</div>
+            <div class="news-item">Event 2</div>
+            <div class="news-item">Event 3</div>
+            <div class="news-item">Event 4</div>
+            <div class="news-item">Event 5</div>
+            <div class="news-item">Event 6</div>
+          </div>
+        </div>
+      </section>
+    
+      <section class="support">
         <h2>Support the Community</h2>
         <div class="container-support">
           <p>Help the community through education, healthcare, and economic empowerment.</p>
         </div>  
         <a href="#" class="btn-secondary">Donate Now</a>
+        
       </section>
+
+  
 
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-column">
         <h2>East Bali Poverty Project</h2>
         <div class="social-icons">
-          <a href="#"><img src="x-icon.svg" alt="X"></a>
-          <a href="#"><img src="instagram-icon.svg" alt="Instagram"></a>
-          <a href="#"><img src="youtube-icon.svg" alt="YouTube"></a>
-          <a href="#"><img src="linkedin-icon.svg" alt="LinkedIn"></a>
+          <a href="https://twitter.com/eastbalipp">
+            <img src="images/x-logo.png" alt="X">
+          </a>
+          <a href="https://www.instagram.com/eastbalipovertyproject/">
+            <img src="images/ig-logo.png" alt="Instagram">
+          </a>
+          <a href="https://www.youtube.com/user/EBPP1998">
+            <img src="images/yt-icon.png" alt="YouTube">
+          </a>
+          <a href="https://www.linkedin.com/company/eastbalipovertyproject">
+            <img src="images/linkedin-logo.png" alt="LinkedIn">
+          </a>
+          <a href="https://www.facebook.com/eastbalipovertyproject">
+            <img src="images/fb-logo.png" alt="Facebook">
+          </a>
         </div>
       </div>
   
+      <div class="vert-line"></div>
       <div class="footer-column">
         <h3>Get Involved</h3>
         <a href="#">Donate</a>
@@ -77,12 +109,14 @@
         <a href="#">Fundraising</a>
       </div>
   
+      <div class="vert-line"></div>
       <div class="footer-column">
         <h3>Resources</h3>
         <a href="#">Annual Reports</a>
         <a href="#">Child Protection Policy</a>
       </div>
   
+      <div class="vert-line"></div>
       <div class="footer-column">
         <h3>Get Connected</h3>
         <a href="#">Blog</a>
@@ -101,16 +135,16 @@
     window.addEventListener("scroll", () => {
     const currentScrollPos = window.pageYOffset;
     const scrollDiff = prevScrollPos - currentScrollPos;
-  
-    // Only show header if scrolling up significantly and past 100px
-    if (scrollDiff > 5 && currentScrollPos > 10) {
-      header.style.top = "0";
-    } 
-    // Hide if scrolling down
-    else if (scrollDiff < -5) {
-      header.style.top = "-100px";
+
+
+    if (scrollDiff > 10 && currentScrollPos > 50) {
+      header.classList.add("visible");
+      header.classList.remove("hidden");
+    } else if (scrollDiff < -10) {
+      header.classList.remove("visible");
+      header.classList.add("hidden");
     }
-  
+
     prevScrollPos = currentScrollPos;
     });
     const menuToggle = document.getElementById("menu-toggle");

@@ -68,6 +68,21 @@ nav a {
   gap: 20px;
 }
 
+.btn-donate {
+  background-color: #ef7f5c;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.btn-donate:hover {
+  background-color: #e96d4c;
+}
 
 .menu-toggle {
   display: none;
@@ -124,20 +139,31 @@ li{
   text-decoration: underline;
 }
 
+.social-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
 .social-icons a {
   margin-right: 10px;
 }
 
 .social-icons img {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
 }
 
 .footer-bottom {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
   font-size: 14px;
   color: #666;
+}
+
+.vert-line{
+  border-left: 2px solid #ef7f5c;
+  height: auto;
 }
 
 
