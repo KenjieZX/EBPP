@@ -112,15 +112,23 @@ li{
   margin: auto;
 }
 
-.footer-column {
+.footer-column1 {
   flex: 1 1 200px;
-  margin: 20px;
+  margin: 23px;
+  /* padding: 10px; */
 }
 
-.footer-column h2 {
-  font-size: 20px;
+.footer-column1 h2 {
+  font-size: 23px;
   font-weight: 700;
   margin-bottom: 15px;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  margin: 15px;
+  padding: 20px;
+  border-left: #000 2px solid;
 }
 
 .footer-column h3 {
@@ -160,11 +168,11 @@ li{
   font-size: 14px;
   color: #666;
 }
-
+/* 
 .vert-line{
-  border-left: 2px solid #ef7f5c;
+  border: 2px solid #3c3939;
   height: auto;
-}
+} */
 
 
 
