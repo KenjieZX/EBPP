@@ -710,16 +710,25 @@ li{
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: grid;
+    display: flex;
     grid-template-columns: 300px 1fr;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .person-card img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
+    flex: 1;
+}
+
+.person-card .person-info {
+    flex: 1;
+}
+
+.person-card:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
 .person-info {
@@ -755,6 +764,24 @@ li{
 }
 
 /* Responsive Styles */
+@media (max-width: 1260px) {
+    .person-card {
+        flex-direction: column;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    .person-card:nth-child(even) {
+        flex-direction: column;
+    }
+    
+    .person-card img {
+        width: 100%;
+        max-height: auto;
+        object-fit: cover;
+    }
+    }
+
 @media (max-width: 1024px) {
     .vision-content {
         grid-template-columns: 1fr;
@@ -1067,4 +1094,167 @@ footer .work {
 
 .current-campaigns .campaign-details a:hover {
   background-color: #eea236;
+}
+
+/* Volunteer Page Styles by diyow */
+.volunteer-banner {
+    background-color: #98c179;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.volunteer-banner h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.volunteer-image {
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.volunteer-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.volunteer-content {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.volunteer-section {
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+.volunteer-section:hover {
+    transform: translateY(-5px);
+}
+
+.volunteer-section h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #98c179;
+    position: relative;
+}
+
+.volunteer-section h2::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 80px;
+    height: 2px;
+    background-color: #f06d3d;
+}
+
+.volunteer-section h3 {
+    color: #f06d3d;
+    font-size: 1.3em;
+    margin: 20px 0 15px;
+    font-weight: 600;
+}
+
+.volunteer-columns {
+    display: flex;
+    gap: 40px;
+}
+
+.volunteer-column {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border-top: 3px solid #98c179;
+}
+
+.volunteer-column:nth-child(2) {
+    border-top-color: #f06d3d;
+}
+
+.volunteer-section ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.volunteer-section li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 15px;
+}
+
+.volunteer-section li::before {
+    content: "•";
+    color: #98c179;
+    font-weight: bold;
+    position: absolute;
+    left: -5px;
+}
+
+.volunteer-section p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.application-process {
+    background-color: #98c179;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.application-process h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.application-buttons {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.application-process p {
+    margin: 15px 0;
+}
+
+.btn-application {
+    display: inline-block;
+    background-color: #f06d3d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.btn-application:hover {
+    background-color: #e2663a;
+}
+
+/* Responsive styles for volunteer page */
+@media (max-width: 768px) {
+    .volunteer-columns {
+        flex-direction: column;
+    }
+    
+    .volunteer-column {
+        width: 100%;
+    }
+    
+    .volunteer-section {
+        padding: 0 15px;
+    }
 }
