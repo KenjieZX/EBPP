@@ -1267,6 +1267,7 @@ footer .work {
 .volunteer-banner {
     background-color: #98c179;
     color: white;
+    margin-top: 7%;
     padding: 30px 0;
     text-align: center;
 }
@@ -1376,7 +1377,7 @@ footer .work {
 }
 
 .application-process {
-    background-color: #98c179;
+    background-color: #92b98c;
     color: white;
     padding: 40px 0;
     text-align: center;
@@ -1394,10 +1395,15 @@ footer .work {
 }
 
 .application-process h2 {
-    font-size: 2em;
+    font-size: 3em;
+    text-align: left;
+    margin-left: 10%;
 }
 
 .application-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .application-process p {
