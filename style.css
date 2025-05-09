@@ -1290,7 +1290,7 @@ footer .work {
 
 .volunteer-content {
     padding: 60px 0;
-    background-color: #fff;
+    background-color: #fdf8e7;
 }
 
 .volunteer-section {
@@ -1382,14 +1382,22 @@ footer .work {
     text-align: center;
 }
 
+.application-process .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.application-process-content {
+  flex: 1;
+  text-align: left;
+}
+
 .application-process h2 {
     font-size: 2em;
-    margin-bottom: 20px;
 }
 
 .application-buttons {
-    max-width: 500px;
-    margin: 0 auto;
 }
 
 .application-process p {
