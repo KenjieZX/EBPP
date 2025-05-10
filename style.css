@@ -1267,6 +1267,7 @@ footer .work {
 .volunteer-banner {
     background-color: #98c179;
     color: white;
+    margin-top: 7%;
     padding: 30px 0;
     text-align: center;
 }
@@ -1290,7 +1291,7 @@ footer .work {
 
 .volunteer-content {
     padding: 60px 0;
-    background-color: #fff;
+    background-color: #fdf8e7;
 }
 
 .volunteer-section {
@@ -1376,20 +1377,33 @@ footer .work {
 }
 
 .application-process {
-    background-color: #98c179;
+    background-color: #92b98c;
     color: white;
     padding: 40px 0;
     text-align: center;
 }
 
+.application-process .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.application-process-content {
+  flex: 1;
+  text-align: left;
+}
+
 .application-process h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 3em;
+    text-align: left;
+    margin-left: 10%;
 }
 
 .application-buttons {
-    max-width: 500px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .application-process p {
