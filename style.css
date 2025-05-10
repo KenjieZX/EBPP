@@ -1425,3 +1425,111 @@ footer .work {
         padding: 0 15px;
     }
 }
+/* Fundraising page styles by Jr */
+.hero-fundraising {
+  background-image: url('images/fundraising1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-fundraising::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* for contrast */
+  z-index: 0;
+}
+
+.hero-fundraising .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-fundraising h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+
+
+/* --- Project Sections --- */
+.project-section {
+  padding: 40px 20px;
+  background-color: #fef8e7;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.project-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #fef8e7;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+  gap: 30px;
+}
+
+.project-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.project-image {
+  flex: 0 0 300px;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.project-details {
+  flex: 1;
+}
+
+.project-details h3 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-details p,
+.project-details ul {
+  font-size: 0.95em;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.project-details a {
+  display: inline-block;
+  background-color: #f0ad4e;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.project-details a:hover {
+  background-color: #eea236;
+}
+
