@@ -607,6 +607,7 @@ li{
 /* About Page Styles by diyow */
 .our-story {
     padding: 60px 0;
+    margin-top: 6%;
     background-color: #fffbeb;
 }
 
@@ -669,7 +670,7 @@ li{
 
 .our-vision {
     padding: 80px 0;
-    background-color: #98c179;
+    background-color: #96b98b;
     color: #fff;
     position: relative;
     overflow: hidden;
@@ -786,7 +787,7 @@ li{
 
 .awards {
     padding: 80px 0;
-    background-color: #f8f9fa;
+    background-color: #fefbeb;
 }
 
 .awards .section-header h2 {
@@ -858,7 +859,7 @@ li{
 
 .meet-people {
     padding: 60px 0;
-    background-color: #fffbeb;
+    background-color: #96b98b;
 }
 
 .meet-people h2 {
@@ -869,24 +870,25 @@ li{
 
 .people-grid {
     display: grid;
-    gap: 40px;
+    gap: 30px;
 }
 
 .person-card {
-    background: #fff;
+    background: #fefbeb;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
-    grid-template-columns: 300px 1fr;
-    margin-left: 100px;
-    margin-right: 100px;
+    grid-template-columns: 250px 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .person-card img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+  margin: 20px;
+  border-radius: 10px;
+  align-self: center;
+  max-width: fit-content;
     flex: 1;
 }
 
@@ -931,7 +933,7 @@ li{
 }
 
 /* Responsive Styles */
-@media (max-width: 1260px) {
+@media (max-width: 1028px) {
     .person-card {
         flex-direction: column;
         margin-left: 40px;
@@ -943,8 +945,7 @@ li{
     }
     
     .person-card img {
-        width: 100%;
-        max-height: auto;
+        width: 90%;
         object-fit: cover;
     }
     }
@@ -1265,9 +1266,9 @@ footer .work {
 
 /* Volunteer Page Styles by diyow */
 .volunteer-banner {
-    background-color: #98c179;
+    background-color: #96b98b;
     color: white;
-    margin-top: 7%;
+    margin-top: 6%;
     padding: 30px 0;
     text-align: center;
 }
