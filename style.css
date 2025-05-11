@@ -1602,10 +1602,34 @@ footer .work {
 }
 
 .donate-grid{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
   gap: 15px;
-  padding: 1px 2px 3px;
-  /* max-width: 1200px; */
+  padding: 20px 2px 35px 2px;
+  max-width: 1200px;
   margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.donate-card {
+  background-color: #fff7ed;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  justify-content: center;
+  flex: 1 1 500px;
+}
+
+.donate-card h3 {
+  font-size: 20px;
+  margin: 0.5rem 0;
+}
+
+.donate-card p {
+  font-size: 15px;
+  color: #555;
+  min-height: 50px;
+  text-align: left;
 }
