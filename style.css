@@ -942,6 +942,7 @@ header li{
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 40px;
+    color: white;
 }
 
 .people-grid {
@@ -950,7 +951,7 @@ header li{
 }
 
 .person-card {
-    background: #fefbeb;
+    background: white;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -987,7 +988,7 @@ header li{
 }
 
 .person-info h4 {
-    color: #666;
+    color: #f06d3d;
     font-size: 1.1em;
     margin-bottom: 15px;
 }
@@ -1386,9 +1387,9 @@ header li{
 }
 
 
-/* Volunteer Page Styles by diyow */
+/* Volunteer Page Styles */
 .volunteer-banner {
-    background-color: #96b98b;
+    background-color: #98c179;
     color: white;
     margin-top: 6%;
     padding: 30px 0;
@@ -1398,6 +1399,12 @@ header li{
 .volunteer-banner h1 {
     font-size: 2.5em;
     margin: 0;
+}
+
+.banner-subtitle {
+    font-size: 1.2em;
+    margin-top: 15px;
+    opacity: 0.9;
 }
 
 .volunteer-image {
@@ -1413,52 +1420,35 @@ header li{
 }
 
 .volunteer-content {
-    padding: 60px 0;
-    background-color: #fdf8e7;
+    padding: 40px 0;
+    background-color: #fffbeb;
 }
 
 .volunteer-section {
-    margin-bottom: 50px;
-    background-color: #fff;
+    margin-bottom: 40px;
+    background: #fff;
     border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     padding: 30px;
-    transition: transform 0.3s ease;
-}
-
-.volunteer-section:hover {
-    transform: translateY(-5px);
 }
 
 .volunteer-section h2 {
     color: #333;
-    font-size: 1.8em;
-    margin-bottom: 25px;
-    padding-bottom: 15px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
     border-bottom: 2px solid #98c179;
-    position: relative;
-}
-
-.volunteer-section h2::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 80px;
-    height: 2px;
-    background-color: #f06d3d;
+    padding-bottom: 10px;
 }
 
 .volunteer-section h3 {
     color: #f06d3d;
-    font-size: 1.3em;
-    margin: 20px 0 15px;
-    font-weight: 600;
+    font-size: 1.2em;
+    margin: 15px 0;
 }
 
 .volunteer-columns {
     display: flex;
-    gap: 40px;
+    gap: 30px;
 }
 
 .volunteer-column {
@@ -1466,11 +1456,6 @@ header li{
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
-    border-top: 3px solid #98c179;
-}
-
-.volunteer-column:nth-child(2) {
-    border-top-color: #f06d3d;
 }
 
 .volunteer-section ul {
@@ -1479,57 +1464,38 @@ header li{
 }
 
 .volunteer-section li {
-    margin-bottom: 12px;
-    line-height: 1.6;
-    position: relative;
-    padding-left: 15px;
-}
-
-.volunteer-section li::before {
-    content: "•";
-    color: #98c179;
-    font-weight: bold;
-    position: absolute;
-    left: -5px;
-}
-
-.volunteer-section p {
-    line-height: 1.6;
-    margin-bottom: 15px;
-    color: #555;
+    margin-bottom: 8px;
+    line-height: 1.5;
 }
 
 .application-process {
-    background-color: #92b98c;
+    background-color: #98c179;
     color: white;
     padding: 40px 0;
-    text-align: center;
 }
 
 .application-process .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.application-process-content {
-  flex: 1;
-  text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .application-process h2 {
     font-size: 3em;
-    text-align: left;
-    margin-left: 10%;
+    margin-bottom: 20px;
+    flex: 1;
+    margin: auto;
+    text-align: center;
 }
 
 .application-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex: 1;
+    margin: 0;
+    align-content: center;
 }
 
-.application-process p {
+.application-buttons p {
     margin: 15px 0;
 }
 
@@ -1542,6 +1508,8 @@ header li{
     text-decoration: none;
     margin: 10px 0;
     transition: background-color 0.3s;
+    width: 40%;
+    text-align: center;
 }
 
 .btn-application:hover {
@@ -1549,7 +1517,7 @@ header li{
 }
 
 /* Responsive styles for volunteer page */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .volunteer-columns {
         flex-direction: column;
     }
@@ -1558,8 +1526,93 @@ header li{
         width: 100%;
     }
     
+    .application-process .container {
+        flex-direction: column;
+    }
+    
+    .application-process h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .application-buttons {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .volunteer-banner h1 {
+        font-size: 2em;
+        margin-top: 6%;
+    }
+    
+    .banner-subtitle {
+        font-size: 1em;
+    }
+    
     .volunteer-section {
-        padding: 0 15px;
+        padding: 20px;
+    }
+    
+    .volunteer-section h2 {
+        font-size: 1.3em;
+    }
+    
+    .volunteer-section h3 {
+        font-size: 1.1em;
+    }
+    
+    .volunteer-section ul {
+        padding-left: 15px;
+    }
+    
+    .volunteer-section li {
+        font-size: 0.9em;
+    }
+    
+    .application-process h2 {
+        font-size: 3em;
+    }
+    
+    .application-buttons {
+        padding: 20px;
+    }
+    
+    .btn-application {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .volunteer-banner {
+        padding: 20px 0;
+        margin-top: 6%;
+    }
+    
+    .volunteer-banner h1 {
+        font-size: 1.5em;
+    }
+    
+    .volunteer-image {
+        max-height: 200px;
+    }
+    
+    .volunteer-content {
+        padding: 20px 0;
+    }
+    
+    .volunteer-section {
+        margin: 0 15px 30px;
+    }
+    
+    .application-process {
+        padding: 30px 0;
+    }
+    
+    .application-buttons {
+        width: 100%;
+        border-radius: 0;
     }
 }
 
@@ -2006,4 +2059,25 @@ header li{
 
 .logo-card:hover {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f06d3d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 99;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#back-to-top:hover {
+  background-color: #e2663a;
 }
