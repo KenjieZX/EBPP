@@ -1,4 +1,4 @@
-/* Header, Footer */
+/* Header, Footer*/
 .container-header {
   display: flex;
   justify-content:space-between;
@@ -24,7 +24,6 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* padding: 15px 20px; */
   z-index: 999;
   transition: top 0.3s, opacity 0.3s;
   opacity: 1;
@@ -41,7 +40,6 @@
   opacity: 1;
   pointer-events: auto;
 }
-
 
 .logo {
   font-weight: bold;
@@ -156,7 +154,7 @@ header nav {
   cursor: pointer;
 }
 
-li{
+header li{
   list-style: none;
   display: flex;
   align-items: center;
@@ -1595,7 +1593,7 @@ footer .work {
 
 .donate-hero h1 {
   text-align: center;
-  margin: 2rem 0 1rem;
+  margin: 40px 0 20px;
 }
 
 .donate-hero img{
@@ -1751,4 +1749,63 @@ footer .work {
   background-color: #e06b4f;
   color: white;
   border-color: #e06b4f;
+}
+
+
+
+/* Achievement Page by Davian */
+
+.achievement-section{
+  padding: 100px 35px 10px 35px;
+  justify-content: space-evenly;
+  background: #98c179;
+  color: #fff;
+}
+
+.achievement-section img{
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.achievement-content{
+  text-align: justify;
+  width: 70%;
+  margin: auto;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  display: flex;
+}
+
+.achievement-content h1{
+  font-size: 32px;
+  text-align: left;
+}
+
+.achievement-lists{
+  justify-content: space-evenly;
+  padding: 0 35px 0 35px;
+  margin-bottom: 30px;
+}
+
+.achievements{
+  width: 70%;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.achievements span{
+  margin-top: 30px;
+}
+
+.achievements h2{
+  margin-bottom: 10px;
+}
+
+.achievements ul{
+  padding-left: 40px;
+  display: block;
+  list-style-type: disc;
 }

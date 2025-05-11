@@ -6,10 +6,10 @@ window.addEventListener("scroll", () => {
     const scrollDiff = prevScrollPos - currentScrollPos;
 
 
-    if (scrollDiff > 10 && currentScrollPos > 50) {
+    if (scrollDiff > 5 && currentScrollPos > 50) {
       header.classList.add("visible");
       header.classList.remove("hidden");
-    } else if (scrollDiff < -10) {
+    } else if (scrollDiff < -5) {
       header.classList.remove("visible");
       header.classList.add("hidden");
     }
