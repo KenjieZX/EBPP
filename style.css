@@ -1159,136 +1159,118 @@ footer .work {
 
 /* Campaign page styles by Jr*/
 .campaign-head {
-  background-color: #a9cbb7; /* Light green background */
-  padding: 100px 20px 40px 20px; /* Increased top padding (100px + existing 40px) */
-  text-align: center; /* Center the content within */
+  background-image: url('images/campaign1.png'); /* Use image as background */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.campaign-head::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for text readability */
+  z-index: 0;
 }
 
 .campaign-head .container {
-  max-width: 1200px;
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .campaign-head h2 {
-  color: #333;
-  margin-top: 0; /* Reset any default top margin on the heading */
+  font-size: 2.5em;
   margin-bottom: 20px;
-  font-size: 1.8em;
-}
-
-.campaign-head-image {
-  margin-bottom: 30px; /* Add spacing below the image */
-}
-
-.campaign-head-image img {
-  display: block; /* Remove default inline spacing */
-  width: 100%; /* Make the image scale to the container width */
-  max-width: 600px; /* Limit the maximum width of the image if needed */
-  height: auto; /* Maintain aspect ratio */
-  margin: 0 auto; /* Center the image horizontally */
-  border-radius: 5px; /* Optional: add rounded corners */
+  color: #fff;
 }
 
 .campaign-head p {
-  color: #555;
+  font-size: 1em;
   line-height: 1.6;
-  margin-bottom: 30px;
-  font-size: 0.95em;
+  color: #eee;
 }
 
 
 .current-campaigns {
   padding: 40px 20px;
   background-color: #fef8e7;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.current-campaigns .campaign-item {
+.campaign-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   background-color: #fef8e7;
   border-radius: 8px;
   overflow: hidden;
-  display: flex;
-  align-items: stretch;
   padding: 20px;
-  margin-bottom: 20px;
+  gap: 30px;
 }
 
-/* Image on the right for odd-numbered items */
-.current-campaigns .campaign-item:nth-child(odd) .campaign-image {
-  width: 200px;
-  height: auto;
-  overflow: hidden;
-  flex-shrink: 0;
-  margin-right: 20px; /* Space to the left of the image */
-  order: 1; /* Image on the right */
+/* Alternate layout: reverse on even items */
+.campaign-item:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
-.current-campaigns .campaign-item:nth-child(odd) .campaign-details {
-  order: 2; /* Details on the left */
+.campaign-image {
+  flex: 0 0 300px;
 }
 
-/* Image on the left for even-numbered items */
-.current-campaigns .campaign-item:nth-child(even) .campaign-image {
-  width: 200px;
-  height: auto;
-  overflow: hidden;
-  flex-shrink: 0;
-  margin-left: 20px; /* Space to the right of the image */
-  order: 2; /* Image on the left */
-}
-
-.current-campaigns .campaign-item:nth-child(even) .campaign-details {
-  order: 1; /* Details on the right */
-}
-
-.current-campaigns .campaign-image img {
+.campaign-image img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  border-radius: 6px;
   object-fit: cover;
 }
 
-.current-campaigns .campaign-details {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
+.campaign-details {
+  flex: 1;
 }
 
-.current-campaigns .campaign-details h3 {
-  margin-top: 0;
-  font-size: 1.1em;
-  color: #333;
+.campaign-details h3 {
+  font-size: 1.3em;
   margin-bottom: 10px;
-  font-weight: bold;
+  color: #333;
 }
 
-.current-campaigns .campaign-details p {
-  font-size: 0.9em;
+.campaign-details p {
+  font-size: 0.95em;
   color: #555;
   margin-bottom: 20px;
   line-height: 1.6;
-  flex-grow: 1;
 }
 
-.current-campaigns .campaign-details a {
+.campaign-details a {
   display: inline-block;
-  background-color: #f0ad4e;
+  background-color: #ef7f5c;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
   font-size: 0.9em;
   transition: background-color 0.3s ease;
-  align-self: flex-start;
 }
 
-.current-campaigns .campaign-details a:hover {
+.campaign-details a:hover {
   background-color: #eea236;
 }
+
 
 /* Volunteer Page Styles by diyow */
 .volunteer-banner {
@@ -1562,7 +1544,7 @@ footer .work {
 
 .project-details a {
   display: inline-block;
-  background-color: #f0ad4e;
+  background-color: #ef7f5c;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
