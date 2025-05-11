@@ -5,11 +5,6 @@
   align-items: center;
   width: 95%;
   text-align: center;
-  /* display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
-  justify-content:space-between; */
 }
 
 
@@ -55,21 +50,12 @@
   margin: 5px 25px;
 }
 
-/* nav ul {
-  list-style: none;
-  display: inline-flex;
-  align-content: end;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-} */
 
 header nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
   padding: 0;
-  /* margin: 5px 0 0 0; */
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -179,7 +165,6 @@ header li{
 .footer-column1 {
   flex: 1 1 200px;
   margin: 23px;
-  /* padding: 10px; */
 }
 
 .footer-column1 h2 {
@@ -277,7 +262,6 @@ header li{
   .container {
     width: 100%;
     max-width: 1500px;
-    /* margin: auto 35px; */
     padding: 0px 35px;
   }
   
@@ -293,7 +277,6 @@ header li{
     margin: auto;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* max-width: 1400px; */
   }
 
   .container-hero {
@@ -357,7 +340,6 @@ header li{
     color: #fff;
     border-radius: 30px;
     border: 2px solid #fff;
-    /* border-color: #fff; */
     text-decoration: none;
     transition: all 0.3s ease; 
     margin: 5px;
@@ -1063,10 +1045,29 @@ header li{
   padding: 100px 35px;
   margin: auto;
   color: #fffbeb;
+  flex-wrap: wrap;
+  display: flex;
 }
 
 .hero-work h1 {
-  font-size: 48px;
+  font-size: 72px;
+  width: 80%;
+}
+
+.work-description {
+  /* font-size: 20px; */
+  margin: 10px 0 0 0;
+  text-align: center;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-work img{
+  width: 90%;
+  height: auto;
+  margin-top: 20px;
 }
 
 .annual-report {
@@ -1074,6 +1075,7 @@ header li{
   padding: 60px 20px;
   background-color: #fff9e8;
   font-family: 'Inter', sans-serif;
+  border-bottom: 1px solid #000;
 }
 
 .annual-report h2 {
@@ -1087,6 +1089,11 @@ header li{
   margin: 0 auto 30px;
   font-size: 0.95rem;
   line-height: 1.6;
+}
+
+.annual-report a{
+  text-decoration: none;
+  color: #fff;
 }
 
 .report-cards {
@@ -1135,8 +1142,36 @@ header li{
   background-color: #e96d4c;
 }
 
+.financial-statement {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff9e8;
+  font-family: 'Inter', sans-serif;
+  border-bottom: 1px solid #000;
+}
 
-.program-work {
+.financial-statement h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  align-content: center;
+}
+
+.financial-statement p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.financial-statement img {
+  background-color: #ef7f5c;  
+  opacity: 0.7;
+  border-radius: 8px;
+  padding: 10px;
+  fill: #000;
+}
+
+/* .program-work {
   flex: 2 300px;
   max-width: 300px;
   margin: 20px;
@@ -1147,7 +1182,7 @@ header li{
   width: 100%;
   height: auto;
   border-radius: 8px;
-}
+} */
 
 footer .work {
   background: #8FBC8F;
