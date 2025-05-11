@@ -615,6 +615,8 @@ header li{
 
 /* About Page Styles by diyow */
 .our-story {
+    padding: 60px 0;
+    margin-top: 2%;
     padding: 100px 60px 10px 60px;
     background-color: #fffbeb;
 }
@@ -678,7 +680,7 @@ header li{
 
 .our-vision {
     padding: 80px 0;
-    background-color: #98c179;
+    background-color: #96b98b;
     color: #fff;
     position: relative;
     overflow: hidden;
@@ -795,7 +797,7 @@ header li{
 
 .awards {
     padding: 80px 0;
-    background-color: #f8f9fa;
+    background-color: #fefbeb;
 }
 
 .awards .section-header h2 {
@@ -867,7 +869,7 @@ header li{
 
 .meet-people {
     padding: 60px 0;
-    background-color: #fffbeb;
+    background-color: #96b98b;
 }
 
 .meet-people h2 {
@@ -878,24 +880,25 @@ header li{
 
 .people-grid {
     display: grid;
-    gap: 40px;
+    gap: 30px;
 }
 
 .person-card {
-    background: #fff;
+    background: #fefbeb;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
-    grid-template-columns: 300px 1fr;
-    margin-left: 100px;
-    margin-right: 100px;
+    grid-template-columns: 250px 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .person-card img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+  margin: 20px;
+  border-radius: 10px;
+  align-self: center;
+  max-width: fit-content;
     flex: 1;
 }
 
@@ -940,7 +943,7 @@ header li{
 }
 
 /* Responsive Styles */
-@media (max-width: 1260px) {
+@media (max-width: 1028px) {
     .person-card {
         flex-direction: column;
         margin-left: 40px;
@@ -952,8 +955,7 @@ header li{
     }
     
     .person-card img {
-        width: 100%;
-        max-height: auto;
+        width: 90%;
         object-fit: cover;
     }
     }
@@ -1055,9 +1057,11 @@ header li{
 }
 
 .work-description {
+  /* font-size: 20px; */
   margin: 10px 0 0 0;
   text-align: center;
   display: flex;
+  /* flex-direction: column; */
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -1070,12 +1074,14 @@ header li{
 
 .annual-report {
   text-align: center;
-  padding: 50px 20px;
+  padding: 60px 20px;
   background-color: #fff9e8;
+  font-family: 'Inter', sans-serif;
+  border-bottom: 1px solid #000;
 }
 
 .annual-report h2 {
-  font-size: 40px;
+  font-size: 24px;
   margin-bottom: 10px;
   align-content: center;
 }
@@ -1123,7 +1129,7 @@ header li{
   font-weight: 600;
 }
 
-.download-btn {
+.card-body button {
   background-color: #ef7f5c;
   color: white;
   border: none;
@@ -1134,219 +1140,167 @@ header li{
   transition: 0.3s;
 }
 
-.download-btn:hover {
+.card-body button:hover {
   background-color: #e96d4c;
 }
 
-.short-line{
-  width: 75%;          
-  border-bottom: 1px solid black;
-  margin: 0 auto;
-}
-
 .financial-statement {
-  padding: 38px 20px;
+  text-align: center;
+  padding: 60px 20px;
   background-color: #fff9e8;
+  font-family: 'Inter', sans-serif;
+  border-bottom: 1px solid #000;
 }
 
 .financial-statement h2 {
-  font-size: 40px;
+  font-size: 24px;
   margin-bottom: 10px;
+  align-content: center;
 }
 
 .financial-statement p {
-  max-width: 550px;
-  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 0.95rem;
   line-height: 1.6;
-}
-
-.financial-statement a {
-  text-decoration: none;
-  color: #fff;
 }
 
 .financial-statement img {
   background-color: #ef7f5c;  
-  opacity: 0.8;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  opacity: 0.7;
   border-radius: 8px;
-  padding: 20px;
+  padding: 10px;
   fill: #000;
 }
 
-.financial-container {
-  padding: 0px 25px;
-  background: #fef8e7;
-  text-align: justify;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.financial-column {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin: 10px;
-  padding: 10px;
-  flex: 1 1 300px;
-}
-
-.financial-column2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 10px;
-  padding: 7px;
-  flex: 1 1 490px;
-}
-
-.financial-column2 a{
-  margin-top: auto;
-  margin-bottom: auto;
+footer .work {
+  background: #8FBC8F;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
 
 
 /* Campaign page styles by Jr*/
 .campaign-head {
-  background-color: #a9cbb7; /* Light green background */
-  padding: 100px 20px 40px 20px; /* Increased top padding (100px + existing 40px) */
-  text-align: center; /* Center the content within */
+  background-image: url('images/campaign1.png'); /* Use image as background */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.campaign-head::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for text readability */
+  z-index: 0;
 }
 
 .campaign-head .container {
-  max-width: 1200px;
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .campaign-head h2 {
-  color: #333;
-  margin-top: 0; /* Reset any default top margin on the heading */
+  font-size: 2.5em;
   margin-bottom: 20px;
-  font-size: 1.8em;
-}
-
-.campaign-head-image {
-  margin-bottom: 30px; /* Add spacing below the image */
-}
-
-.campaign-head-image img {
-  display: block; /* Remove default inline spacing */
-  width: 100%; /* Make the image scale to the container width */
-  max-width: 600px; /* Limit the maximum width of the image if needed */
-  height: auto; /* Maintain aspect ratio */
-  margin: 0 auto; /* Center the image horizontally */
-  border-radius: 5px; /* Optional: add rounded corners */
+  color: #fff;
 }
 
 .campaign-head p {
-  color: #555;
+  font-size: 1em;
   line-height: 1.6;
-  margin-bottom: 30px;
-  font-size: 0.95em;
+  color: #eee;
 }
 
 
 .current-campaigns {
   padding: 40px 20px;
   background-color: #fef8e7;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.current-campaigns .campaign-item {
+.campaign-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   background-color: #fef8e7;
   border-radius: 8px;
   overflow: hidden;
-  display: flex;
-  align-items: stretch;
   padding: 20px;
-  margin-bottom: 20px;
+  gap: 30px;
 }
 
-/* Image on the right for odd-numbered items */
-.current-campaigns .campaign-item:nth-child(odd) .campaign-image {
-  width: 200px;
-  height: auto;
-  overflow: hidden;
-  flex-shrink: 0;
-  margin-right: 20px; /* Space to the left of the image */
-  order: 1; /* Image on the right */
+/* Alternate layout: reverse on even items */
+.campaign-item:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
-.current-campaigns .campaign-item:nth-child(odd) .campaign-details {
-  order: 2; /* Details on the left */
+.campaign-image {
+  flex: 0 0 300px;
 }
 
-/* Image on the left for even-numbered items */
-.current-campaigns .campaign-item:nth-child(even) .campaign-image {
-  width: 200px;
-  height: auto;
-  overflow: hidden;
-  flex-shrink: 0;
-  margin-left: 20px; /* Space to the right of the image */
-  order: 2; /* Image on the left */
-}
-
-.current-campaigns .campaign-item:nth-child(even) .campaign-details {
-  order: 1; /* Details on the right */
-}
-
-.current-campaigns .campaign-image img {
+.campaign-image img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  border-radius: 6px;
   object-fit: cover;
 }
 
-.current-campaigns .campaign-details {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
+.campaign-details {
+  flex: 1;
 }
 
-.current-campaigns .campaign-details h3 {
-  margin-top: 0;
-  font-size: 1.1em;
-  color: #333;
+.campaign-details h3 {
+  font-size: 1.3em;
   margin-bottom: 10px;
-  font-weight: bold;
+  color: #333;
 }
 
-.current-campaigns .campaign-details p {
-  font-size: 0.9em;
+.campaign-details p {
+  font-size: 0.95em;
   color: #555;
   margin-bottom: 20px;
   line-height: 1.6;
-  flex-grow: 1;
 }
 
-.current-campaigns .campaign-details a {
+.campaign-details a {
   display: inline-block;
-  background-color: #f0ad4e;
+  background-color: #ef7f5c;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
   font-size: 0.9em;
   transition: background-color 0.3s ease;
-  align-self: flex-start;
 }
 
-.current-campaigns .campaign-details a:hover {
+.campaign-details a:hover {
   background-color: #eea236;
 }
 
+
 /* Volunteer Page Styles by diyow */
 .volunteer-banner {
-    background-color: #98c179;
+    background-color: #96b98b;
     color: white;
-    margin-top: 7%;
+    margin-top: 6%;
     padding: 30px 0;
     text-align: center;
 }
@@ -1614,7 +1568,7 @@ header li{
 
 .project-details a {
   display: inline-block;
-  background-color: #f0ad4e;
+  background-color: #ef7f5c;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
