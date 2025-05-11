@@ -615,6 +615,8 @@ header li{
 
 /* About Page Styles by diyow */
 .our-story {
+    padding: 60px 0;
+    margin-top: 2%;
     padding: 100px 60px 10px 60px;
     background-color: #fffbeb;
 }
@@ -678,7 +680,7 @@ header li{
 
 .our-vision {
     padding: 80px 0;
-    background-color: #98c179;
+    background-color: #96b98b;
     color: #fff;
     position: relative;
     overflow: hidden;
@@ -795,7 +797,7 @@ header li{
 
 .awards {
     padding: 80px 0;
-    background-color: #f8f9fa;
+    background-color: #fefbeb;
 }
 
 .awards .section-header h2 {
@@ -867,7 +869,7 @@ header li{
 
 .meet-people {
     padding: 60px 0;
-    background-color: #fffbeb;
+    background-color: #96b98b;
 }
 
 .meet-people h2 {
@@ -878,24 +880,25 @@ header li{
 
 .people-grid {
     display: grid;
-    gap: 40px;
+    gap: 30px;
 }
 
 .person-card {
-    background: #fff;
+    background: #fefbeb;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
-    grid-template-columns: 300px 1fr;
-    margin-left: 100px;
-    margin-right: 100px;
+    grid-template-columns: 250px 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .person-card img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+  margin: 20px;
+  border-radius: 10px;
+  align-self: center;
+  max-width: fit-content;
     flex: 1;
 }
 
@@ -940,7 +943,7 @@ header li{
 }
 
 /* Responsive Styles */
-@media (max-width: 1260px) {
+@media (max-width: 1028px) {
     .person-card {
         flex-direction: column;
         margin-left: 40px;
@@ -952,8 +955,7 @@ header li{
     }
     
     .person-card img {
-        width: 100%;
-        max-height: auto;
+        width: 90%;
         object-fit: cover;
     }
     }
@@ -1055,11 +1057,9 @@ header li{
 }
 
 .work-description {
-  /* font-size: 20px; */
   margin: 10px 0 0 0;
   text-align: center;
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -1072,14 +1072,12 @@ header li{
 
 .annual-report {
   text-align: center;
-  padding: 60px 20px;
+  padding: 50px 20px;
   background-color: #fff9e8;
-  font-family: 'Inter', sans-serif;
-  border-bottom: 1px solid #000;
 }
 
 .annual-report h2 {
-  font-size: 24px;
+  font-size: 40px;
   margin-bottom: 10px;
   align-content: center;
 }
@@ -1127,7 +1125,7 @@ header li{
   font-weight: 600;
 }
 
-.card-body button {
+.download-btn {
   background-color: #ef7f5c;
   color: white;
   border: none;
@@ -1138,57 +1136,78 @@ header li{
   transition: 0.3s;
 }
 
-.card-body button:hover {
+.download-btn:hover {
   background-color: #e96d4c;
 }
 
+.short-line{
+  width: 75%;          
+  border-bottom: 1px solid black;
+  margin: 0 auto;
+}
+
 .financial-statement {
-  text-align: center;
-  padding: 60px 20px;
+  padding: 38px 20px;
   background-color: #fff9e8;
-  font-family: 'Inter', sans-serif;
-  border-bottom: 1px solid #000;
 }
 
 .financial-statement h2 {
-  font-size: 24px;
+  font-size: 40px;
   margin-bottom: 10px;
-  align-content: center;
 }
 
 .financial-statement p {
-  max-width: 600px;
-  margin: 0 auto 30px;
-  font-size: 0.95rem;
+  max-width: 550px;
+  font-size: 18px;
   line-height: 1.6;
+}
+
+.financial-statement a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .financial-statement img {
   background-color: #ef7f5c;  
-  opacity: 0.7;
+  opacity: 0.8;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   border-radius: 8px;
-  padding: 10px;
+  padding: 20px;
   fill: #000;
 }
 
-/* .program-work {
-  flex: 2 300px;
-  max-width: 300px;
-  margin: 20px;
-  text-align: center;
+.financial-container {
+  padding: 0px 25px;
+  background: #fef8e7;
+  text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  margin: auto;
 }
 
-.program-work img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-} */
+.financial-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 10px;
+  padding: 10px;
+  flex: 1 1 300px;
+}
 
-footer .work {
-  background: #8FBC8F;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
+.financial-column2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px;
+  padding: 7px;
+  flex: 1 1 490px;
+}
+
+.financial-column2 a{
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 
@@ -1309,9 +1328,9 @@ footer .work {
 
 /* Volunteer Page Styles by diyow */
 .volunteer-banner {
-    background-color: #98c179;
+    background-color: #96b98b;
     color: white;
-    margin-top: 7%;
+    margin-top: 6%;
     padding: 30px 0;
     text-align: center;
 }
