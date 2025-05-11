@@ -1577,6 +1577,10 @@ footer .work {
   background-color: #eea236;
 }
 
+
+
+
+
 /* Donate Page by Davian */
 
 .donate-hero {
@@ -1632,4 +1636,119 @@ footer .work {
   color: #555;
   min-height: 50px;
   text-align: left;
+}
+
+/* News & Stories Page by Davian */
+
+.news-stories{
+  text-align: center;
+  padding: 100px 35px 10px 35px;
+}
+
+.news-section {
+  font-family: 'Inter', sans-serif;
+  background-color: #fdf4ec;
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.news-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #111;
+}
+
+.news-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.news-nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.news-nav a:hover {
+  background-color: #ffe7d6;
+}
+
+.news-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.news-card img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 220px;
+}
+
+.news-content {
+  padding: 1rem;
+}
+
+.news-content small {
+  color: #777;
+  font-size: 0.8rem;
+}
+
+.news-content h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #111;
+}
+
+.news-content p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.news-content a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #e06b4f;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.pagination a.active {
+  background-color: #e06b4f;
+  color: white;
+  border-color: #e06b4f;
 }
