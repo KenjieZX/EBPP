@@ -274,8 +274,7 @@ li{
   .hero {
     background: #98c179;
     color: #fff;
-    padding: 100px 60px 0 60px;
-    margin: 100px 35px 0 35px;
+    padding: 100px 60px 10px 60px;
     text-align: center;
     display: flex;
     margin: auto;
@@ -630,7 +629,7 @@ li{
 
 /* About Page Styles by diyow */
 .our-story {
-    padding: 60px 0;
+    padding: 100px 60px 10px 60px;
     background-color: #fffbeb;
 }
 
