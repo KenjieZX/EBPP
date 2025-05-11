@@ -234,11 +234,26 @@ li{
   font-size: 14px;
   color: #666;
 }
-/* 
-.vert-line{
-  border: 2px solid #3c3939;
-  height: auto;
-} */
+
+/* Universal Style */
+.btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #f06d3d;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid #f06d3d;
+    transition: all 0.3s ease; 
+    cursor: pointer;
+  }
+
+  .btn-primary:hover {
+    background-color: #e2663a;
+    color: #fff;
+    border: 2px solid #e2663a;
+  }
 
 
 
@@ -318,15 +333,6 @@ li{
     text-align: center;
   }
   
-  .btn-primary {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 25px;
-    background: #f06d3d;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-  }
   
   .btn-support{
     display: inline-block;
@@ -1569,4 +1575,37 @@ footer .work {
 
 .project-details a:hover {
   background-color: #eea236;
+}
+
+/* Donate Page by Davian */
+
+.donate-hero {
+  padding: 100px 35px 10px 35px;
+}
+
+.donate-content {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.donate-hero h1 {
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+.donate-hero img{
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.donate-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+  padding: 1px 2px 3px;
+  /* max-width: 1200px; */
+  margin: auto;
 }
