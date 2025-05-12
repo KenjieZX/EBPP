@@ -32,7 +32,7 @@
                   </ul>
                 </li>
                 <li class="dropdown">
-                  <a href="news-stories.html">News & Stories &#x2BC6;</a>
+                  <a href="newsletter.html">News & Stories &#x2BC6;</a>
                   <ul class="dropdown-menu">
                     <li><a href="newsletter.html">Newsletters</a></li>
                   </ul>
@@ -58,25 +58,54 @@
         </div>
     </header>
 
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1>Newesletter</h1>
-            <p>Newsletter page</p>
-            <p>Newsletter page</p>
-            <p>Newsletter page</p>
-            <p>Newsletter page</p>
-            <p>Newsletter page</p>
-            <p>Newsletter page</p>
-            <p>Newsletter page</p>
-            <p>Newsletter page</p>
-            <p>Newsletter page</p>
-            <p>Newsletter page</p>
+    <section class="newsletter">
+        <h1>Our Latest Newsletter</h1>
+        <div class="container-newsletter">
+          <div class="newsletter-grid">
+            <div class="newsletter-card">
+              <a href="https://mailchi.mp/eastbalipovertyproject/special-news-update"
+                  target="_blank" rel="noopener noreferrer">
+                <img src="https://static.wixstatic.com/media/21aaac_b3242f87dc764a2f9840342f3663bf20~mv2.jpg/v1/crop/x_108,y_0,w_869,h_868/fill/w_474,h_474,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a07c728a-98fb-4712-929d-55eb21701356%20cop.jpg" 
+                alt="Newsletter 1">
+                <div class="overlay">
+                    <h3>Special News Update</h3>
+                </div>
+              </a>
+            </div>
+            <div class="newsletter-card">
+              <a href="https://mailchi.mp/eastbalipovertyproject/ebpp-covid-19-update-continued-education-and-health-outreach"
+                  target="_blank" rel="noopener noreferrer">
+                <img src="https://static.wixstatic.com/media/21aaac_b1daa8a920e14ce5a25e2c88c02362c6~mv2.jpg/v1/crop/x_86,y_0,w_628,h_628/fill/w_474,h_474,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/91e4fc07-ab9e-44e3-8f1a-f6da38c21780%20cop.jpg" 
+                alt="Newsletter 2">
+                <div class="overlay">
+                    <h3>EBPP COVID-19 UPDATE: Continued Education and Health Outreach </h3>
+                </div>
+              </a>
+            </div>
+            
+          </div>
         </div>
+    </section>
+
+    <div class="short-line"></div>
+
+    <section class="support">
+        <span class="arrow-tree">&#11245;</span>
+        <h2>Support the Community</h2>
+        <div class="container-support">
+          <p>Help the community through education, healthcare, and economic empowerment.</p>
+          <p>
+            Helping disadvantaged communities in Bali’s poorest region 
+            achieve self-reliance and sustainable socio-economic 
+            development through holistic, community-driven development programmes.
+          </p>
+        </div>  
+        <a href="donate.html" class="btn-primary">Donate Now</a>
+        
     </section>
 
     <footer class="footer">
         <div class="footer-content">
-
             <div class="footer-column1">
                 <h2>East Bali Poverty Project</h2>
                 <div class="social-icons">
@@ -98,60 +127,44 @@
                 </div>
             </div>
       
+          
             <div class="footer-column">
                 <div>
                     <h3>Get Involved</h3>
-                    <a href="#">Donate</a>
+                    <a href="donate.html">Donate</a>
                     <a href="volunteer.html">Volunteer</a>
-                    <a href="#">Fundraising</a>
+                    <a href="fundraising.html">Fundraising</a>
                 </div>
             </div>
         
             <div class="footer-column">
                 <h3>Resources</h3>
-                <a href="#">Annual Reports</a>
-                <a href="#">Child Protection Policy</a>
+                <a href="our-work.html#annual-report">Annual Reports</a>
+                <a href="https://www.eastbalipovertyproject.org/_files/ugd/21aaac_7e18cd9cc106432ab0ef18e3bf483ee6.pdf"
+                  target="_blank" rel="noopener noreferrer">
+                  Child Protection Policy
+                </a>
             </div>
         
             <div class="footer-column">
                 <h3>Get Connected</h3>
-                <a href="#">Blog</a>
-                <a href="#">Contact Us</a>
+                <a href="https://www.eastbalipovertyproject.org/copy-of-sign-up"
+                  target="_blank" rel="noopener noreferrer">
+                  Blog
+                </a>
+                <a href="https://www.eastbalipovertyproject.org/contactus"
+                  target="_blank" rel="noopener noreferrer">
+                  Contact Us
+                </a>
             </div>
         </div>
       
         <p class="footer-bottom">All rights reserved to East Bali Poverty Project</p>
     </footer>
     
-    <script>
-    
-        let prevScrollPos = window.pageYOffset;
-        const header = document.getElementById("header");
-    
-        window.addEventListener("scroll", () => {
-        const currentScrollPos = window.pageYOffset;
-        const scrollDiff = prevScrollPos - currentScrollPos;
-    
-    
-        if (scrollDiff > 10 && currentScrollPos > 50) {
-          header.classList.add("visible");
-          header.classList.remove("hidden");
-        } else if (scrollDiff < -10) {
-          header.classList.remove("visible");
-          header.classList.add("hidden");
-        }
-    
-        prevScrollPos = currentScrollPos;
-        });
-        
-        const menuToggle = document.getElementById("menu-toggle");
-        const nav = document.querySelector("nav");
-        menuToggle.addEventListener("click", () => {
-          nav.classList.toggle("show");
-        });
-    </script>
-      <script src="backtotop.js"></script>
-      <button id="back-to-top" title="Back to top">↑</button>
+    <script src="header.js"></script>
+    <script src="backtotop.js"></script>
+    <button id="back-to-top" title="Back to top">↑</button>
 
 </body>
 </html>
