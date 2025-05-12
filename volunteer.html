@@ -135,9 +135,9 @@
                     <p>Please download and complete the EBPP Volunteer Questionnaire.</p>
                     <a href="https://www.eastbalipovertyproject.org/_files/ugd/6c3b8b_4e783135a1214e759360236de1b8cbb0.doc?dn=EBPP-Volunteer-Application.doc" class="btn-application">Download Questionnaire</a>
                     <p>Complete all sections and upload to submit form here</p>
-                    <a href="#" class="btn-application">Upload Questionnaire</a>
+                    <button class="btn-primary upload-questionnaire-btn">Upload Questionnaire</button>
                     <p>Please upload your current CV/Resume from here</p>
-                    <a href="#" class="btn-application">Upload CV</a>
+                    <button class="btn-primary upload-cv-btn">Upload CV</button>
                 </div>
             </div>
         </section>
@@ -191,9 +191,49 @@
       
         <p class="footer-bottom">All rights reserved to East Bali Poverty Project</p>
       </footer>
+  
+  <div id="uploadModal" class="modal">
+    <div class="modal-content">
+      <button class="close-button" id="closeModal">✕</button>
+      <h2 class="modal-title">Upload a Questionnaire</h2>
+      <form class="modal-form">
+        <div class="file-upload-container" id="fileUploadContainer">
+          <span class="add-icon">+</span> Add File
+        </div>
+        <input type="file" id="fileUpload" style="display: none;">
+        
+        <input type="email" placeholder="Email" required>
+        
+        <textarea placeholder="Message"></textarea>
+        
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="cvModal" class="modal">
+    <div class="modal-content">
+      <button class="close-button" id="closeCvModal">✕</button>
+      <h2 class="modal-title">Upload your CV</h2>
+      <form class="modal-form">
+        <div class="file-upload-container" id="cvFileUploadContainer">
+          <span class="add-icon">+</span> Add File
+        </div>
+        <input type="file" id="cvFileUpload" style="display: none;">
+        
+        <input type="email" placeholder="Email" required>
+        
+        <textarea placeholder="Message"></textarea>
+        
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </div>
 
   <script src="header.js"></script>
   <script src="backtotop.js"></script>
+  <script src="modal.js"></script>
   <button id="back-to-top" title="Back to top">↑</button>
+
 </body>
 </html>
