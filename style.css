@@ -2294,7 +2294,6 @@ header li{
     color: white;
     text-align: center;
     padding: 100px 20px;
-    margin-bottom: 50px;
 }
 
 .banner-get-involved h1 {
@@ -2310,17 +2309,17 @@ header li{
 }
 
 .involvement-cards {
+    background-color: #9ab98a;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     padding: 20px;
-    max-width: 1200px;
     margin: 0 auto 50px;
 }
 
 .involvement-card {
-    background-color: #fff9e8;
+    background-color: #9ab98a;
     border-radius: 10px;
     overflow: hidden;
     width: 100%;
@@ -2329,7 +2328,8 @@ header li{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    height: 500px; /* Set fixed height for all cards */
+    height: 500px;
+    margin: 100px 0;
 }
 
 .involvement-card:hover {
@@ -2354,6 +2354,7 @@ header li{
 }
 
 .card-content {
+    background: rgba(255, 255, 255, 0.1);
     padding: 25px;
     display: flex;
     flex-direction: column;
@@ -2364,11 +2365,11 @@ header li{
 .card-content h2 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #333;
+    color: white;
 }
 
 .card-content p {
-    color: #666;
+    color: white;
     margin-bottom: 20px;
     line-height: 1.6;
 }
