@@ -58,24 +58,61 @@
         </div>
     </header>
 
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1>Key Achievements</h1>
-            <p>Get involved page</p>
-            <p>Get involved page</p>
-            <p>Get involved page</p>
-            <p>Get involved page</p>
-            <p>Get involved page</p>
-            <p>Get involved page</p>
-            <p>Get involved page</p>
-            <p>Get involved page</p>
-            <p>Get involved page</p>
-            <p>Get involved page</p>
-            <p>Get involved page</p>
-            <p>Get involved page</p>
-            <p>Get involved page</p>
-        </div>
-    </section>
+    <main>
+        <section class="banner-get-involved">
+            <h1>Get Involved</h1>
+            <p>We are on a mission to help families in rural areas of Indonesia achieve sustainable development. We have supported more than 4,000 people in the past 20 years, and we are growing stronger. Explore our opportunities below and join our mission.</p>
+        </section>
+        <section class="involvement-cards">
+            <div class="involvement-card">
+                <div class="card-image">
+                    <img src="https://static.wixstatic.com/media/6c3b8b_6fb560a7e196473cb6345d1c8228c47d~mv2.jpg/v1/fill/w_467,h_454,al_c,lg_1,q_80,enc_avif,quality_auto/volunteers-EBPP_2.jpg" alt="Volunteer with children">
+                </div>
+                <div class="card-content">
+                    <h2>Be A Volunteer</h2>
+                    <p>We're looking for talented, forward-thinking and energetic individuals to join our team.</p>
+                    <a href="volunteer.html" class="card-button">Join Us</a>
+                </div>
+            </div>
+
+            <div class="involvement-card">
+                <div class="card-image">
+                    <img src="https://static.wixstatic.com/media/6c3b8b_6620af342a854872a65126f61609599d~mv2.jpg/v1/fill/w_467,h_454,al_c,lg_1,q_80,enc_avif,quality_auto/bamboo%20social%20enteprise%20(5).jpg" alt="Bamboo bike social enterprise">
+                </div>
+                <div class="card-content">
+                    <h2>Support Our Social Enterprise</h2>
+                    <p>Help us grow our bamboo bike social enterprise with your expertise.</p>
+                    <a href="http://eastbalibamboobikes.com/" class="card-button">Learn More</a>
+                </div>
+            </div>
+
+            <div class="involvement-card">
+                <div class="card-image">
+                    <img src="https://static.wixstatic.com/media/6c3b8b_ab92496b53384296bf804c8d068c2eac~mv2.png/v1/fill/w_551,h_535,al_c,lg_1,q_85,enc_avif,quality_auto/Rectangle%205068%20(2).png" alt="Fundraising activities">
+                </div>
+                <div class="card-content">
+                    <h2>Fundraise</h2>
+                    <p>Organise a fundraising event to help us run our programs.</p>
+                    <a href="fundraising.html" class="card-button">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="support">
+          <span class="arrow-tree">&#11245;</span>
+          <h2>Support the Community</h2>
+          <div class="container-support">
+            <p>Help the community through education, healthcare, and economic empowerment.</p>
+            <p>
+              Helping disadvantaged communities in Bali’s poorest region 
+              achieve self-reliance and sustainable socio-economic 
+              development through holistic, community-driven development programmes.
+            </p>
+          </div>  
+          <a href="donate.html" class="btn-primary">Donate Now</a>
+          
+      </section>
+    </main>
 
     <footer class="footer">
         <div class="footer-content">
@@ -100,61 +137,42 @@
                 </div>
             </div>
       
-          
             <div class="footer-column">
                 <div>
                     <h3>Get Involved</h3>
-                    <a href="#">Donate</a>
+                    <a href="donate.html">Donate</a>
                     <a href="volunteer.html">Volunteer</a>
-                    <a href="#">Fundraising</a>
+                    <a href="fundraising.html">Fundraising</a>
                 </div>
             </div>
         
             <div class="footer-column">
                 <h3>Resources</h3>
-                <a href="#">Annual Reports</a>
-                <a href="#">Child Protection Policy</a>
+                <a href="our-work.html#annual-report">Annual Reports</a>
+                <a href="https://www.eastbalipovertyproject.org/_files/ugd/21aaac_7e18cd9cc106432ab0ef18e3bf483ee6.pdf"
+                  target="_blank" rel="noopener noreferrer">
+                  Child Protection Policy
+                </a>
             </div>
         
             <div class="footer-column">
                 <h3>Get Connected</h3>
-                <a href="#">Blog</a>
-                <a href="#">Contact Us</a>
+                <a href="https://www.eastbalipovertyproject.org/copy-of-sign-up"
+                  target="_blank" rel="noopener noreferrer">
+                  Blog
+                </a>
+                <a href="https://www.eastbalipovertyproject.org/contactus"
+                  target="_blank" rel="noopener noreferrer">
+                  Contact Us
+                </a>
             </div>
         </div>
       
         <p class="footer-bottom">All rights reserved to East Bali Poverty Project</p>
     </footer>
     
-    <script>
-    
-        let prevScrollPos = window.pageYOffset;
-        const header = document.getElementById("header");
-    
-        window.addEventListener("scroll", () => {
-        const currentScrollPos = window.pageYOffset;
-        const scrollDiff = prevScrollPos - currentScrollPos;
-    
-    
-        if (scrollDiff > 10 && currentScrollPos > 50) {
-          header.classList.add("visible");
-          header.classList.remove("hidden");
-        } else if (scrollDiff < -10) {
-          header.classList.remove("visible");
-          header.classList.add("hidden");
-        }
-    
-        prevScrollPos = currentScrollPos;
-        });
-        
-        const menuToggle = document.getElementById("menu-toggle");
-        const nav = document.querySelector("nav");
-        menuToggle.addEventListener("click", () => {
-          nav.classList.toggle("show");
-        });
-    </script>
+    <script src="header.js"></script>
     <script src="backtotop.js"></script>
     <button id="back-to-top" title="Back to top">↑</button>
-
 </body>
 </html>
