@@ -404,7 +404,7 @@ header li{
   .container-about1 {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     margin: 10px;
     padding: 10px;
     flex: 1 1 500px;
@@ -1920,7 +1920,6 @@ header li{
 .pagination a.active {
   background: #e06b4f;
   color: white;
-  border-color: #e06b4f;
 }
 
 
