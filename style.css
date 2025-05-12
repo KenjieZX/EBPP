@@ -33,7 +33,7 @@
 #header.visible {
   top: 0;
   opacity: 1;
-  pointer-events: auto;
+  pointer-events: all;
 }
 
 .logo {
@@ -1930,7 +1930,7 @@ header li{
 }
 
 .pagination a.active {
-  background-color: #e06b4f;
+  background: #e06b4f;
   color: white;
   border-color: #e06b4f;
 }
