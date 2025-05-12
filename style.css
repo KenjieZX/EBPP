@@ -398,6 +398,7 @@ header li{
     width: 90%;
     height: 300px;
     border-radius: 2px;
+    border: 0px;
   }
 
   .container-about1 {
@@ -506,7 +507,6 @@ header li{
     justify-content: space-evenly;
     margin: 10px;
     padding: 10px;
-    /* flex: 1 1 500px; */
   }
   
   .news-item-main {
@@ -549,7 +549,6 @@ header li{
   
   /* Support Section */
   .support {
-    /* background: #d9e8d8; */
     padding: 0px 0 60px 0;
     text-align: center;
   }
@@ -658,6 +657,27 @@ header li{
         grid-template-rows: 5fr; /* stack vertically */
         grid-template-columns: 1fr;
       }
+
+      .hero-work h1 {
+        font-size: 28px;
+      }
+
+      /* .financial-container {
+        text-align: justify;
+        justify-content: space-evenly;
+      }
+
+      .financial-column {
+        flex-direction: column;
+        align-items: center;
+        flex: 1 1 300px;
+      }
+
+      .financial-column2 {
+        flex-direction: column;
+        align-items: center;
+        flex: 1 1 300px;
+      } */
     }
 
     @media (max-width: 1174px) {
