@@ -229,11 +229,11 @@ header li{
     display: inline-block;
     margin-top: 20px;
     padding: 10px 25px;
-    background: #f06d3d;
+    background: #ef7f5c;
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
-    border: 2px solid #f06d3d;
+    border: 2px solid #ef7f5c;
     transition: all 0.3s ease; 
     cursor: pointer;
   }
@@ -1402,7 +1402,7 @@ header li{
 }
 
 .campaign-details a:hover {
-  background-color: #eea236;
+  background-color: #e2663a;
 }
 
 
@@ -1756,7 +1756,7 @@ header li{
 }
 
 .project-details a:hover {
-  background-color: #eea236;
+  background-color: #e2663a;
 }
 
 
