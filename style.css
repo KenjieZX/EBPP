@@ -2408,3 +2408,49 @@ header li{
         font-size: 1rem;
     }
 }
+
+
+/* Newsletter Sign Up Page by Kenjie */
+.newsletter-signup{
+  padding: 100px 35px 10px 35px;
+  background: #fef8e7;
+}
+
+.newsletter-signup h1{
+  text-align: center;
+  margin: 20px 0 5px 0;
+  font-size: 48px;
+}
+
+.container-newsletter-signup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 500px;
+    margin: auto;
+    background: #fff;
+    /* padding: 0px 0 32px 0; */
+}
+
+.signup-form{
+  width: 100%;
+  margin: 10px 10px;
+}
+
+.indicator {
+  height: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: end;
+}
+
+.asterisk{
+    color: #f0553d;
+}
+
+.signup-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
